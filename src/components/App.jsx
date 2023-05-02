@@ -24,17 +24,7 @@ class App extends React.Component {
   render() {
     const { good, neutral, bad } = this.state;
     return (
-      <div
-        style={{
-          //   height: '100vh',
-          //   display: 'flex',
-          //   justifyContent: 'center',
-          // alignItems: 'center',
-          marginLeft: 10,
-          // fontSize: 35,
-          color: '#010101',
-        }}
-      >
+      <div style={{ ms: 'center', marginLeft: 10, color: '#010101' }}>
         <Section title="Please leave your feedback">
           <FeedbackOptions
             options={Object.keys(this.state)}
